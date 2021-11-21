@@ -1,0 +1,3 @@
+[submodule "safaribooks"]
+	path = safaribooks
+	url = git@github.com:lorenzodifuccia/safaribooks.git

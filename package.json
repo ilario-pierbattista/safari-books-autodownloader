@@ -1,0 +1,53 @@
+{
+  "name": "safari-books-autodownloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json",
+    "login": "node -r ts-node/register -r dotenv/config src/login/index.ts",
+    "download": "node -r ts-node/register src/download/index.ts",
+    "type-check": "tsc --noEmit",
+    "ci": "yarn type-check && yarn test --ci",
+    "autofix": "yarn prettier && yarn lint --fix && yarn prettier",
+    "prettier": "prettier --write \"./{src,test,demo}/**/*.ts\"",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.16.3",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.11.8",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.2.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-simple-import-sort": "^6.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.3.5",
+    "fp-ts": "^2.11.5",
+    "io-ts": "^2.2.16",
+    "jest": "^26.6.3",
+    "nyc": "^15.1.0",
+    "playwright": "^1.16.3",
+    "prettier": "^2.1.2",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilario-pierbattista/safari-books-autodownloader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilario-pierbattista/safari-books-autodownloader/issues"
+  },
+  "homepage": "https://github.com/ilario-pierbattista/safari-books-autodownloader#readme"
+}
