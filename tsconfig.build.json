@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "ES2017",
-    "outDir": "lib",
+    "outDir": "build",
     "noEmit": false,
     "module": "commonjs"
   },

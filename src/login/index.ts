@@ -5,7 +5,7 @@ import { pipe } from 'fp-ts/lib/function'
 import * as TE from 'fp-ts/TaskEither'
 import * as O from 'fp-ts/Option'
 import { writeFile } from 'fs/promises'
-import { safariBooksModulePath } from 'src/utils'
+import { safariBooksModulePath } from '../utils'
 
 interface Config {
     safariEmail: string
